@@ -5,11 +5,9 @@
 {#if showModal}
   <div class="backdrop">
     <div class="modal">
-      <p>Sign up for offers!</p>
+        <p>モーダルです!</p>
     </div>
   </div>
 {/if}
 
-<style>
-
-</style>
+<style></style>

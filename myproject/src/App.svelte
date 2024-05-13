@@ -1,19 +1,20 @@
 <script>
   import Modal from './Modal.svelte';
 
-	let people = [
+  let people = [
     { name: 'yoshi', beltColour: 'black', age: 25, id: 1 },
     { name: 'mario', beltColour: 'orange', age: 45, id: 2 },
     { name: 'luigi', beltColour: 'brown', age: 35, id: 3 }
   ];
 
   const handleClick = (e, id) => {
-    people = people.filter(person => person.id != id);
+    people = people.filter(person => person.id !== id);
     console.log(e);
   };
 </script>
 
 <Modal />
+
 <main>
   {#each people as person (person.id)}
     <div>
