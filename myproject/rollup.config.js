@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -71,6 +72,8 @@ function serve() {
 	};
 }
 =======
+=======
+>>>>>>> 50501a1 (共通rollup.config.jsの追加)
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -142,4 +145,7 @@ function serve() {
 		}
 	};
 }
+<<<<<<< HEAD
+>>>>>>> 50501a1 (共通rollup.config.jsの追加)
+=======
 >>>>>>> 50501a1 (共通rollup.config.jsの追加)
