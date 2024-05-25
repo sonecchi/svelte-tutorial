@@ -4,10 +4,11 @@
   let showModal = false;
 
   let toggleModal = () => {
+      console.log('toggleModel');
     showModal = !showModal;
   };
 
-	let people = [
+  let people = [
     { name: 'yoshi', beltColour: 'black', age: 25, id: 1 },
     { name: 'mario', beltColour: 'orange', age: 45, id: 2 },
     { name: 'luigi', beltColour: 'brown', age: 35, id: 3 }
@@ -19,9 +20,9 @@
   };
 </script>
 
-<Modal message='Hello, Ninjas!' {showModal} on:click={toggleModal} />
+<Modal message='Hello, Ninjas!' {showModal} on:click={()=>toggleModal()} />
 <main>
-  <button on:click|once={toggleModal}>Open Modal</button>
+  <button on:click={()=>toggleModal()}>Open Modal</button>
   {#each people as person (person.id)}
     <div>
       <h4>{person.name}</h4>
