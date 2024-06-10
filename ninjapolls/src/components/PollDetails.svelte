@@ -23,7 +23,7 @@
     PollStore.update(currentPolls => {
 
       let copiedPolls = [...currentPolls];
-      let upvotedPoll = copiedPolls.find(poll => poll.id == id);
+      let upvotedPoll = copiedPolls.find(poll => poll.id === id);
 
       if(option === 'a'){
         upvotedPoll.votesA++;
@@ -39,7 +39,7 @@
   // deleting a poll
   const handleDelete = (id) => {
     PollStore.update(polls => {
-      return polls.filter(poll => poll.id != id);
+      return polls.filter(poll => poll.id !== id);
     });
   };
 </script>
